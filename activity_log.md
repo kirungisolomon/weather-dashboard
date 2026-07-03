@@ -31,3 +31,4 @@
 [2026-08-08] Mobile layout QA - coordinate refresh
 [2026-07-01] July planning refresh - data recovery
 [2026-07-02] Historical docs polish - data recovery
+[2026-07-03] Static page maintenance - data recovery
