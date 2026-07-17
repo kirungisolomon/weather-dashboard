@@ -6,3 +6,4 @@
 [2026-07-14] Geo city filter refinement - coordinate refresh
 [2026-07-15] Air quality card alignment - coordinate refresh
 [2026-07-16] Rainfall widget tuning - coordinate refresh
+[2026-07-17] UI theme spacing pass - coordinate refresh
