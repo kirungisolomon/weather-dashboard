@@ -15,3 +15,4 @@
 [2026-07-23] Weather models data refresh - coordinate refresh
 [2026-07-24] Geo city filter refinement - coordinate refresh
 [2026-07-25] Air quality card alignment - coordinate refresh
+[2026-07-26] Rainfall widget tuning - coordinate refresh
