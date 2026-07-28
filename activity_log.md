@@ -17,3 +17,4 @@
 [2026-07-25] Air quality card alignment - coordinate refresh
 [2026-07-26] Rainfall widget tuning - coordinate refresh
 [2026-07-27] UI theme spacing pass - coordinate refresh
+[2026-07-28] Sensor feed normalization - coordinate refresh
