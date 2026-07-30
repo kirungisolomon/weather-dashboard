@@ -19,3 +19,4 @@
 [2026-07-27] UI theme spacing pass - coordinate refresh
 [2026-07-28] Sensor feed normalization - coordinate refresh
 [2026-07-29] Mobile layout QA - coordinate refresh
+[2026-07-30] Weather signal refresh - coordinate refresh
