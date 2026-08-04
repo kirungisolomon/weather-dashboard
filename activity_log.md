@@ -24,3 +24,4 @@
 [2026-08-01] Forecast API endpoint review - coordinate refresh
 [2026-08-02] Weather models data refresh - coordinate refresh
 [2026-08-03] Geo city filter refinement - coordinate refresh
+[2026-08-04] Air quality card alignment - coordinate refresh
