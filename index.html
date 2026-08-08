@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherFlow Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <span>☀</span>
+        </div>
+        <div>
+          <div class="brand-kicker">Climate OS</div>
+          <h1>WeatherFlow</h1>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-label">Overview</div>
+        <a href="#" class="nav-link active">
+          <span class="icon">▦</span>
+          Dashboard
+        </a>
+        <a href="#" class="nav-link">
+          <span class="icon">◎</span>
+          Forecast
+        </a>
+        <a href="#" class="nav-link">
+          <span class="icon">☔</span>
+          Rainfall
+        </a>
+        <a href="#" class="nav-link">
+          <span class="icon">☼</span>
+          Air Quality
+        </a>
+      </nav>
+
+      <div class="sidebar-card">
+        <div class="small-text">Live Pulse</div>
+        <div class="pulse-row">
+          <span class="status-dot"></span>
+          <span class="status-text">All systems online</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <div class="page-kicker">Weather Intelligence</div>
+          <h2>Today’s Overview</h2>
+        </div>
+        <div class="topbar-actions">
+          <button class="ghost-button">This Week</button>
+          <button class="primary-button">+ Add City</button>
+        </div>
+      </header>
+
+      <section class="city-bar">
+        <label class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input id="citySearch" type="text" value="San Francisco" aria-label="Search city" />
+        </label>
+        <button class="search-button" id="searchButton">Update</button>
+      </section>
+
+      <section class="summary-grid">
+        <article class="summary-card highlight-card">
+          <div class="card-header">
+            <span class="location-name">San Francisco, CA</span>
+            <span class="condition-badge">Partly Cloudy</span>
+          </div>
+          <div class="temp-row">
+            <div class="temperature">72°</div>
+            <div class="weather-icon">☀</div>
+          </div>
+          <div class="temp-subtitle">Feels like 74°</div>
+          <div class="metric-row">
+            <div>
+              <span class="metric-label">Humidity</span>
+              <span class="metric-value">61%</span>
+            </div>
+            <div>
+              <span class="metric-label">Wind</span>
+              <span class="metric-value">8 mph</span>
+            </div>
+            <div>
+              <span class="metric-label">UV Index</span>
+              <span class="metric-value">Moderate</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="summary-card compact-card">
+          <div class="card-header">
+            <span class="card-title">Air Quality</span>
+            <span class="trend up">+2.1%</span>
+          </div>
+          <div class="large-number">32</div>
+          <div class="muted-text">AQI Index</div>
+          <div class="bar-wrap">
+            <div class="bar-track"><div class="bar-fill short"></div></div>
+          </div>
+        </article>
+
+        <article class="summary-card compact-card">
+          <div class="card-header">
+            <span class="card-title">Rainfall</span>
+            <span class="trend down">-0.4%</span>
+          </div>
+          <div class="large-number">21%</div>
+          <div class="muted-text">Chance of rain</div>
+          <div class="bar-wrap">
+            <div class="bar-track"><div class="bar-fill rain"></div></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="dashboard-row">
+        <article class="panel forecast-panel">
+          <div class="panel-header">
+            <div>
+              <span class="panel-label">7-Day Forecast</span>
+              <h3>Next 7 days</h3>
+            </div>
+            <button class="icon-button">•••</button>
+          </div>
+          <div class="forecast-list">
+            <div class="forecast-item">
+              <span class="forecast-day">Mon</span>
+              <span class="forecast-icon">☀</span>
+              <span class="forecast-temp">75°</span>
+            </div>
+            <div class="forecast-item">
+              <span class="forecast-day">Tue</span>
+              <span class="forecast-icon">☁</span>
+              <span class="forecast-temp">69°</span>
+            </div>
+            <div class="forecast-item">
+              <span class="forecast-day">Wed</span>
+              <span class="forecast-icon">☔</span>
+              <span class="forecast-temp">66°</span>
+            </div>
+            <div class="forecast-item">
+              <span class="forecast-day">Thu</span>
+              <span class="forecast-icon">☀</span>
+              <span class="forecast-temp">77°</span>
+            </div>
+            <div class="forecast-item">
+              <span class="forecast-day">Fri</span>
+              <span class="forecast-icon">☀</span>
+              <span class="forecast-temp">79°</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel chart-panel">
+          <div class="panel-header">
+            <div>
+              <span class="panel-label">Temperature Trend</span>
+              <h3>San Francisco</h3>
+            </div>
+            <span class="trend up">+6°</span>
+          </div>
+          <div class="chart-area">
+            <div class="chart-line">
+              <svg viewBox="0 0 500 160" preserveAspectRatio="none">
+                <polyline points="0,140 50,125 100,110 150,105 200,96 250,76 300,82 350,55 400,50 450,36 500,20" class="chart-polyline" />
+              </svg>
+            </div>
+            <div class="chart-scale">
+              <span>60°</span>
+              <span>65°</span>
+              <span>70°</span>
+              <span>75°</span>
+              <span>80°</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel alerts-panel">
+          <div class="panel-header compact">
+            <div>
+              <span class="panel-label">Alerts</span>
+              <h3>Environment Notes</h3>
+            </div>
+            <button class="icon-button">+</button>
+          </div>
+          <ul class="alert-list">
+            <li>
+              <span class="alert-icon warning">!</span>
+              <div>
+                <div class="alert-title">Heat advisory</div>
+                <div class="muted-text">High temperatures expected after 3 PM</div>
+              </div>
+            </li>
+            <li>
+              <span class="alert-icon ok">✓</span>
+              <div>
+                <div class="alert-title">Wind monitor</div>
+                <div class="muted-text">Current wind speeds are stable</div>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="panel details-panel">
+          <div class="panel-header compact">
+            <div>
+              <span class="panel-label">Station Feed</span>
+              <h3>Live Feed</h3>
+            </div>
+            <span class="live-text">Live</span>
+          </div>
+          <div class="feed-list">
+            <div class="feed-row">
+              <span class="feed-time">10:12</span>
+              <span>Humidity increased by 4%</span>
+            </div>
+            <div class="feed-row">
+              <span class="feed-time">10:24</span>
+              <span>Visibility improved to 9 miles</span>
+            </div>
+            <div class="feed-row">
+              <span class="feed-time">10:43</span>
+              <span>Wind gusts near 12 mph</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
